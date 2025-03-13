@@ -1,39 +1,28 @@
-Proyek Analisis Data (Bike-Sharing Dataset)
 
-Deskripsi Proyek
-Dashboard interaktif yang dibuat dengan **Streamlit** untuk menganalisis data peminjaman sepeda. Proyek ini mencakup analisis pengaruh hari libur terhadap jumlah peminjaman sepeda, pola pengguna baru vs pengguna lama, serta analisis RFM. Proyek ini dilakukanoleh Muhammad Firdaus dengan email firdauspdr20@gmail.com dan ID Dicoding mc211d5y2137.
+## Proyek Analisis Data (Bike-Sharing Dataset)
 
-Library yang digunakan
-> Numpy
-> Pandas
-> Matplotlib
-> Seaborn
-> Google Colab Drive
+## Deskripsi Proyek
+Dashboard interaktif yang dibuat dengan **Streamlit** untuk menganalisis bagian data hour.csv & day.csv dari bike sharing analysis. Proyek ini mencakup analisis pengaruh hari libur terhadap jumlah peminjaman sepeda, pola penyewaan sepeda berdasarkan jam dalam 1 hari, serta analisis RFM dan mendapatkan beberapa *insight* menarik di dalam data
+
+## Struktur Direktori
+- /dataset berisi data mentah yang digunakan dalam proyek
+- /dashboard berisi dashboard.py yang digunakan untuk membuat streamlit dari hasil analisa data serta dataset yang sudah di **assess** & **cleaning**
+- tugasML.ipynb adalah **notebook** yang digunakan dalam analisa data
  
-Data Wrangling
-Gathering Data
-> Dataset day.csv dan hour.csv diambil dari file di Google Drive
-> Dataset day.csv berisi 731 baris dan 16 kolom
-> Dataset hour.csv berisi 17379 baris dan 17 kolom
+## Langkah Instalasi
+1. Silahkan clone repository ini ke **local computer** anda, lakukan langkah dibawah ini
+   ```shell
+   git clone https://github.com/MFirdaus20/bike-sharing-dashboard
+   ```
+ 2. Install python (jika belum memilikinya), jika sudah memiliki **environment** silahkan jalankan perintah berikut untuk menginstall pustaka yang dibutuhkan
+    ```shell
+    pip install -r requirements.txt
+    ```
 
-Assessing Data & Cleaning Data
-> day.csv:
-  - Tidak ada missing value, jadi tidak perlu dilakukan pembersihan
-  - Tidak ada data yg duplikat, jadi tidak perlu dilakukan pembersihan
-  - Statistik deskriptif menunjukkan tidak ada nilai yang tidak masuk akal
-> hour.csv:
-  - Tidak ada missing value, jadi tidak perlu dilakukan pembersihan
-  - Tidak ada data yg duplikat, jadi tidak perlu dilakukan pembersihan
-  - Statistik deskriptif menunjukkan tidak ada nilai yang tidak masuk akal
-
-Langkah Selanjutnya
-> Melakukan analisis lebih lanjut untuk menjawab pertanyaan bisnis yang telah ditentukan
-> Membuat visualisasi data untuk mendapatkan insight
-> Melakukan analisis tambahan 
-> Membuat dashboard streamlit
-
-Setup environment
-conda create --name mc211d5y2137 python=3.9 conda activate mc211d5y2137 pip install -r requirements.txt
-
-Run streamlit app
-streamlit run dashboard\dashboard.py
+## Penggunaan
+1. Masuk ke direktori proyek local :
+   ```shell
+   cd Tugas ML 1/ dashboard/
+   streamlit run dashboard/dashboard.py
+   ```
+   anda bisa melihat aplikasi yang telah di deploy di streamlit dalam [link berikut](https://bike-sharing-dashboard-oyeqysdvdncyuru6rrrpcf.streamlit.app/)
